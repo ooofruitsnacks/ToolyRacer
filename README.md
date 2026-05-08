@@ -1,5 +1,5 @@
 # ToolyRacer
-simple retro racing game optimized for the RP2040 and the Tufty 2040 (go to README to change for other screen sizes) written in micropython 
+simple retro racing game optimized for the RP2040 and the Tufty 2040 written in micropython 
 
 <img width="5712" height="4284" alt="image00001" src="https://github.com/user-attachments/assets/b252e133-5920-4f63-84cd-51034cf799c2" />
 
