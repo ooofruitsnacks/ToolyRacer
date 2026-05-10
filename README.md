@@ -1,5 +1,14 @@
 # ToolyRacer
-simple retro racing game optimized for the RP2040 and the Tufty 2040 written in micropython 
+### Simple retro racing game optimized for the RP2040 and the Tufty 2040 written in micropython :)
+
+@ooofruitsnacks on codeberg and tangled / SOURCE CODE WILL BE ADDED THERE SOON
+_____
+### REQUIREMENTS 
+- thonny installed on your computer  ( link https://thonny.org )
+- TUFTY 2040
+- RP2040 micropython flash ( link https://github.com/pimoroni/pimoroni-pico/releases ) go to "GETTING STARTED" to verify correct ver. 
+- Pimoroni QwSTPad (optional easier controls)
+_____
 
 <img width="5712" height="4284" alt="image00001" src="https://github.com/user-attachments/assets/b252e133-5920-4f63-84cd-51034cf799c2" />
 
@@ -9,32 +18,24 @@ simple retro racing game optimized for the RP2040 and the Tufty 2040 written in 
 
 https://github.com/user-attachments/assets/64a02b4d-bd5f-4f9a-b41f-02e73fedb86b
 
+# GETTING STARTED
+How to verify correct ver. for micrpython flash 
+ download this version "tufty2040-v1.27.0-pimoroni-micropython.uf2"
+- https://github.com/pimoroni/pimoroni-pico/releases
+<img width="1048" height="80" alt="Screenshot 2026-05-09 at 10 37 55 PM" src="https://github.com/user-attachments/assets/14db645b-4abf-43ac-8c11-b4e8a5c8c922" />
 
+-
 
-
-
-
-
-# IF YOU FIND A BUG, SUBMIT AS ISSUE OR FIX IT FOR YOURSELF, I WILL TRY TO FIX ASAP  :)
-TUFTY 2040 SYNCING ISSUES? TURN OFF EXTERNAL POWER SOURCES/BATTERY PACKS AND PLUG THE TUFTY 2040 ONLY WITH USBC BY COMPUTER PORT. TURN ON TUFTY 2040 SCREEN AND HOLD BOOT/USR BUTTON FOR A FEW SECONDS. WITHIN THE THONNY APPLICATION ON YOUR COMPUTER, HIT THE "STOP/RESTART" BUTTON(Ctrl+F2)AND THEN PRESS "RUN CURRENT SCRIPT" BUTTON(F5) AND THE DEVICE SHOULD SYNC BACK UP TO YOUR COMPUTER. IF STILL NOT CONNECTED, DOUBLE CHECK YOUR INTERPRETER AND REPEAT ABOVE INSTRUCTIONS. IF YOU DON'T KNOW HOW TO CHECK/CHANGE YOUR INTERPRETER FOR THONNY, READ BELOW STARTING ON LINE 13. 
-
-@ooofruitsnacks on codeberg and tangled / SOURCE CODE WILL BE ADDED THERE SOON
-
-# MAKE CHANGES TO GAME FILES - PERSONALIZE - DEBUGGING
-IF YOU WANT TO MAKE YOUR OWN MODS OR DO YOUR OWN DEBUGGING, THONNY IS REQUIRED TO MAKE CHANGES.
-
- 1.INSTALL THONNY(CHECK THEIR WEBSITE FOR YOUR OPERATING SYSTEM)
- ONCE THONNY IS INSTALLED OPEN THE APPLICATION. 
- 
+Once the micropython flash has been downloaded to your computer, open thonny on your computer. 
 <img width="1154" height="672" alt="Screenshot 2026-05-05 at 8 56 55 PM" src="https://github.com/user-attachments/assets/c0b1397d-9513-44f2-9614-26c517c805f7" />
 
- 2. CLICK AT THE BOTTOM RIGHT HAND SIDE OF THE SCREEN OR AT THE TOP IN THE "TOOLS" SECTION
+Now click at the top of the screen in "Tools" and then click "Options" or at the bottom right hand corner of the screen.
     
 <img width="356" height="262" alt="Screenshot 2026-05-05 at 9 04 19 PM" src="https://github.com/user-attachments/assets/6d417290-c5e6-4dcb-b000-c9e830ba1aa5" />
 
 <img width="457" height="175" alt="Screenshot 2026-05-05 at 9 04 03 PM" src="https://github.com/user-attachments/assets/68dfc4e2-cc7b-4065-9042-38c7dd74b03c" />
 
-3. GO TO /TOOLS/OPTIONS/INTERPRETER AND SELECT MICROPYTHON (RP2040)
+Now click the interpreter tab, if micropython (RP2040) isn't already selected, scroll down to select micropython (RP2040).
    
 <img width="742" height="614" alt="Screenshot 2026-05-05 at 9 05 08 PM" src="https://github.com/user-attachments/assets/bb746f13-27d5-4380-8e5f-8276b3b9c7cf" />
 
@@ -42,10 +43,26 @@ IF YOU WANT TO MAKE YOUR OWN MODS OR DO YOUR OWN DEBUGGING, THONNY IS REQUIRED T
 
 <img width="743" height="603" alt="Screenshot 2026-05-05 at 9 05 28 PM" src="https://github.com/user-attachments/assets/1c222b22-fb53-4e7b-a127-8c599eb1c972" />
 
-ONCE RP2040 IS SELECTED YOU CAN CLOSE THE TOOLS. NO OTHER SETTINGS NEED TO BE CONFIGURED. 
+- Make sure all power is off from the Tufty 2040, the battery turned to the off position as well.
+- Plug the Tufty 2040 in via USBC into your computer. Turn on the Tufty 2040 and hold the usr/boot button for a few seconds to sync to your computer.
+- At the top of Thonny, select "view" and then select "files". It should list all your files/folders on your computer and RP2040/Tufty2040 to the left of your commands and shell section.
+# 2 options for QwSTPad setup (Almost done I swear!!)
+### Option 1 
+Find the folder on your computer named "QwSTPad-micropython-main" and then go to the src folder and you should see the "qwstpad.py". Right click on the file and click the option "upload to /". This will upload the QwSTPad flash to the RP2040 to read, recongize and communicate between your devices.
+ex: of where to find files
+<img width="258" height="115" alt="Screenshot 2026-05-09 at 10 31 52 PM" src="https://github.com/user-attachments/assets/bbfe2b81-d28f-48ab-b15d-d4f1c732a403" />
+If you don't care how it will look on this device, this will work fine. Notice how it says qwstpad on the list of games even though it's not? This can be fixed easily with option 2.
+<img width="5712" height="4284" alt="IMG_1528" src="https://github.com/user-attachments/assets/a8e35fe6-e199-4102-867a-621eda40fdec" />
+
+### Option 2
+Create a directory to store the qwstpad flash. This can be done by viewing the files on your computer, right clicking on "QwSTPad-micropython-main" and select new directory. save it to your RP2040 and it will save all the files without displaying them. 
+<img width="309" height="207" alt="Screenshot 2026-05-09 at 11 22 42 PM" src="https://github.com/user-attachments/assets/d282f6ae-17a0-42ce-a76f-c78f3e685af6" />
+<img width="4048" height="3036" alt="IMG_1527" src="https://github.com/user-attachments/assets/5c7aa229-622e-4314-8be8-20b3a05d99e0" />
+
+yayyyy all cleaned up and all finished.
 
 # MAKE A COPY OF SOURCE CODE TO EDIT FOR YOURSELF
-MAKE A NEW DOCUMENT WITHIN THONNY AND OPEN THE SOURCE CODE(YOU CAN DOWNLOAD THE SOURCE CODE YOURSELF FROM GITHUB) 
+MAKE A NEW DOCUMENT WITHIN THONNY AND OPEN THE SOURCE CODE
 
 <img width="349" height="208" alt="Screenshot 2026-05-05 at 9 28 21 PM" src="https://github.com/user-attachments/assets/97ceea88-6949-430f-a80e-9b4faff6ed78" />
 
