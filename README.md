@@ -1,7 +1,7 @@
 # ToolyRacer
 ### Simple retro racing game optimized for the RP2040 and the Tufty 2040 written in micropython :)
 
-@ooofruitsnacks on codeberg and tangled / SOURCE CODE WILL BE ADDED THERE SOON
+@ooofruitsnacks on codeberg and tangled / SOURCE CODE WILL BE ADDED TO TANGLED SOON, CODEBERG ADDED 05.17.26.
 _____
 ### REQUIREMENTS 
 - thonny installed on your computer  ( link https://thonny.org )
@@ -49,8 +49,11 @@ Now click the interpreter tab, if micropython (RP2040) isn't already selected, s
 # 2 options for QwSTPad setup (Almost done I swear!!)
 ### Option 1 
 Find the folder on your computer named "QwSTPad-micropython-main" and then go to the src folder and you should see the "qwstpad.py". Right click on the file and click the option "upload to /". This will upload the QwSTPad flash to the RP2040 to read, recongize and communicate between your devices.
-ex: of where to find files
+
 <img width="258" height="115" alt="Screenshot 2026-05-09 at 10 31 52 PM" src="https://github.com/user-attachments/assets/bbfe2b81-d28f-48ab-b15d-d4f1c732a403" />
+
+
+ex: of where to find files
 If you don't care how it will look on this device, this will work fine. Notice how it says qwstpad on the list of games even though it's not? This can be fixed easily with option 2.
 <img width="5712" height="4284" alt="IMG_1528" src="https://github.com/user-attachments/assets/a8e35fe6-e199-4102-867a-621eda40fdec" />
 
