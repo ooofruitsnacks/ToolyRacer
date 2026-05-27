@@ -1,19 +1,17 @@
-# Security Policy
-
-## All Supported Versions 
-
-| Version | Supported          |
-| ------- | ------------------ |
-| v.1.2   | :green_circle:     |
-| v.1.3   | :green_circle:     |
-| v.1.4.a | :red_square:       |
+## Security Concerns / Contact info
+If you find a security flaw, please bring this issue to my attention immediately so I can push a fix. 
 
 
-## Reporting a Vulnerability
- - contact : 467487@pm.me 
- - subject : SECURITY CONCERN TOOLYRACER
+contact me at 467487@pm.me with the subject "SECURITY CONCERNS" with the repo and version name. 
 
-The game is stored locally on your device, there is no information being sent out or malware in any of the code. 
-If there is a security concern with the other programs used (thonny and the pimoroni library)
-I will implement any safety precautions needed, but like I said before there is no information or data being collected, stored or transferred from any of your devices, my game, and to outside sources.
-If there is an external threat it is best to delete the game entirely until a new patch is released. 
+Current version ToolyRacer V.1.3. 
+
+## Supported Versions
+
+This will remain supported with safety, security, and performance updates until this repo is marked "read only".
+
+
+| Version | Supported        |
+| ------- | ---------------- |
+| v.1.3   | :green_circle:   |
+
